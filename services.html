@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Services | Biswadip Bhattacharjee — DevOps Engineer</title>
+    <meta name="keywords" content="Web Development, Mobile App Development, Custom Software, Cloud Services, DevOps, Server Management" />
+    <meta name="description" content="Services by Biswadip Bhattacharjee — web & mobile application development, custom software, cloud, DevOps, and server-related services.">
+    <meta name="author" content="Biswadip Bhattacharjee">
+
+    <!-- Mobile view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png">
+
+    <link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.css">
+
+    <!-- Template's stylesheets -->
+    <link rel="stylesheet" href="js/megamenu/stylesheets/screen.css">
+    <link rel="stylesheet" href="js/megamenu/stylesheets/onepage.css">
+    <link rel="stylesheet" href="css/theme-default.css" type="text/css">
+    <link rel="stylesheet" href="js/loaders/stylesheets/screen.css">
+    <link rel="stylesheet" href="css/corporate.css" type="text/css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
+    <link rel="stylesheet" href="fonts/et-line-font/et-line-font.css">
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="js/animations/css/animations.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Template's stylesheets END -->
+
+    <!-- Style Customizer's stylesheets -->
+    <link rel="stylesheet/less" type="text/css" href="less/skin.less">
+
+    <!-- Services page styles -->
+    <style>
+        .bb-svc-hero {
+            background: linear-gradient(120deg, #2A84D6 0%, #43C2DE 100%);
+            padding: 90px 0 80px;
+            text-align: center;
+            color: #fff;
+        }
+        .bb-svc-hero h1 {
+            color: #fff;
+            font-weight: 700;
+            margin: 0 0 12px;
+            font-size: 42px;
+            letter-spacing: .5px;
+        }
+        .bb-svc-hero p {
+            color: rgba(255, 255, 255, .9);
+            font-size: 17px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .bb-svc-breadcrumb {
+            margin-top: 18px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, .85);
+        }
+        .bb-svc-breadcrumb a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .5);
+        }
+        .bb-svc-breadcrumb a:hover { border-bottom-color: #fff; }
+
+        .bb-svc-section { padding: 80px 0; background: #f7f9fc; }
+
+        .bb-svc-card {
+            background: #fff;
+            border: 1px solid #eef1f6;
+            border-radius: 14px;
+            padding: 38px 30px;
+            height: 100%;
+            text-align: center;
+            transition: transform .28s ease, box-shadow .28s ease;
+            margin-bottom: 30px;
+        }
+        .bb-svc-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(42, 132, 214, .15);
+            border-color: transparent;
+        }
+        .bb-svc-icon {
+            width: 78px;
+            height: 78px;
+            line-height: 78px;
+            margin: 0 auto 22px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2A84D6 0%, #43C2DE 100%);
+            color: #fff;
+            font-size: 32px;
+            box-shadow: 0 8px 20px rgba(42, 132, 214, .25);
+        }
+        .bb-svc-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0 0 14px;
+            color: #222;
+        }
+        .bb-svc-card p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .bb-svc-cta {
+            text-align: center;
+            padding: 70px 20px;
+            background: #fff;
+        }
+        .bb-svc-cta h2 {
+            font-weight: 700;
+            font-size: 30px;
+            margin: 0 0 14px;
+            color: #222;
+        }
+        .bb-svc-cta p {
+            color: #6b7280;
+            font-size: 16px;
+            margin: 0 0 26px;
+        }
+        .bb-svc-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            border-radius: 40px;
+            background: linear-gradient(135deg, #2A84D6 0%, #43C2DE 100%);
+            color: #fff !important;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity .25s ease, transform .25s ease;
+        }
+        .bb-svc-btn:hover { opacity: .92; transform: translateY(-2px); color: #fff; }
+
+        @media (max-width: 767px) {
+            .bb-svc-hero { padding: 60px 0 55px; }
+            .bb-svc-hero h1 { font-size: 32px; }
+            .bb-svc-section { padding: 55px 0; }
+        }
+
+        @media (max-width: 767px) {
+            .bb-svc-hero { padding: 60px 0 55px; }
+            .bb-svc-hero h1 { font-size: 32px; }
+            .bb-svc-section { padding: 55px 0; }
+        }
+
+        /* Header blends into the hero — keeps white logo & nav text readable */
+        .wrapper-boxed .site-wrapper .header-section.style1 {
+            background: linear-gradient(120deg, #43C2DE 0%, #43C2DE 100%) !important;
+            box-shadow: none !important;
+        }
+        .header-section.style1 .nav.navbar-nav > li > a {
+            color: #fff !important;
+        }
+        .header-section.style1 .nav.navbar-nav > li > a:hover,
+        .header-section.style1 .nav.navbar-nav > li.active > a {
+            color: #fff !important;
+            opacity: .72;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="wrapper-boxed">
+        <div class="site-wrapper">
+
+            <!-- Header / Nav -->
+            <div class="header-section style1 pin-style">
+                <div class="container">
+                    <div class="mod-menu">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <a href="index.html" title="" class="logo mar-4">
+                                    <img src="images/logo-light-b.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="main-nav" id="navbar-example">
+                                    <ul class="nav navbar-nav top-nav">
+                                        <li class="visible-xs menu-icon">
+                                            <a href="javascript:void(0)" class="navbar-toggle collapsed"
+                                                data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                                                <i aria-hidden="true" class="fa fa-bars"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div id="menu" class="collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li class="mega-menu">
+                                                <a href="index.html#section1">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html#section2">About Me</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html#section3">Experience</a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="services.html">Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html#section4">Tools</a>
+                                            </li>
+                                            <li>
+                                                <a href="index.html#section5">Education</a>
+                                            </li>
+                                            <li class="right">
+                                                <a href="index.html#section6">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end menu-->
+
+            <!-- Hero -->
+            <div class="bb-svc-hero">
+                <div class="container">
+                    <h1>Services</h1>
+                    <p>From idea to production — I build, ship, and run reliable software and infrastructure end to end.</p>
+                    <div class="bb-svc-breadcrumb">
+                        <a href="index.html#section1">Home</a> &nbsp;/&nbsp; Services
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services grid -->
+            <div class="bb-svc-section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bb-svc-card">
+                                <div class="bb-svc-icon"><i class="fa fa-code"></i></div>
+                                <h3>Web Application Development</h3>
+                                <p>Fast, secure, and scalable web apps — from front-ends to robust back-end APIs, built with modern frameworks and clean architecture.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bb-svc-card">
+                                <div class="bb-svc-icon"><i class="fa fa-mobile"></i></div>
+                                <h3>Mobile Application Development</h3>
+                                <p>Native and cross-platform mobile apps for Android and iOS, designed for smooth performance and a great user experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bb-svc-card">
+                                <div class="bb-svc-icon"><i class="fa fa-cube"></i></div>
+                                <h3>Custom Software Development</h3>
+                                <p>Tailored software built around your exact workflow — from internal tools to full business platforms, engineered to solve real problems.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bb-svc-card">
+                                <div class="bb-svc-icon"><i class="fa fa-cloud"></i></div>
+                                <h3>Cloud Services</h3>
+                                <p>Cloud architecture, migration, and cost-optimised infrastructure on AWS — scalable, resilient, and built for production workloads.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bb-svc-card">
+                                <div class="bb-svc-icon"><i class="fa fa-refresh"></i></div>
+                                <h3>DevOps Engineering</h3>
+                                <p>CI/CD pipelines, containerisation, Kubernetes, and Infrastructure as Code — automating delivery so you ship faster with confidence.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="bb-svc-card">
+                                <div class="bb-svc-icon"><i class="fa fa-server"></i></div>
+                                <h3>Server & Infrastructure</h3>
+                                <p>Linux server setup, hardening, monitoring, and maintenance — keeping your systems secure, observable, and always available.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bb-svc-cta">
+                <div class="container">
+                    <h2>Have a project in mind?</h2>
+                    <p>Let's talk about how I can help you build and ship it.</p>
+                    <a href="index.html#section6" class="bb-svc-btn">Get in Touch with Experts</a>
+                </div>
+            </div>
+
+            <!-- Footer start -->
+            <div class="sec-padding-4 bb-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 clearfix margin-bottom">
+                            <div class="fo-map bb-brand">
+                                <div class="footer-logo"><a href="index.html#section1"><img src="images/logo-dark-b.svg"
+                                            alt="Biswadip Bhattacharjee" /></a></div>
+                                <p class="bb-brand-tag">DevOps Engineer · Automating everything, one pipeline at a time🌐.</p>
+                                <p class="bb-brand-about">I love meeting new people and swapping stories over a coffee or a beer about technology, career, life stories, the struggles, and the journeys that shape our life😊.</p>
+                                <p class="bb-brand-cta">Let's build something great together, just say <a href="index.html#section6">Hi!</a> 👋</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 clearfix margin-bottom">
+                            <h4 class="less-mar3 font-weight-5 bb-footer-title">Quick Links</h4>
+                            <ul class="footer-quick-links-5 bb-footer-links">
+                                <li><a href="index.html#section1">Home</a></li>
+                                <li><a href="index.html#section2">About Me</a></li>
+                                <li><a href="index.html#section3">Experience</a></li>
+                                <li><a href="services.html">Service</a></li>
+                                <li><a href="index.html#section4">Tools</a></li>
+                                <li><a href="index.html#section5">Education</a></li>
+                                <li><a href="index.html#section6">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 clearfix margin-bottom">
+                            <h4 class="less-mar3 font-weight-5 bb-footer-title">Skill Set</h4>
+                            <ul class="footer-quick-links-5 bb-footer-links">
+                                <li>Software Engineer</li>
+                                <li>Mbile Application developer</li>
+                                <li>Solution Engineer</li>
+                                <li>DevOps Evangelist</li>
+                                <li>Aspiring Agentic AI DevOps</li>
+                                <li>Hobbyist Traveller</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 clearfix margin-bottom">
+                            <h4 class="less-mar3 font-weight-5 bb-footer-title">Contact Me</h4>
+                            <address class="bb-footer-contact">
+                                <span class="bb-label">Current City</span>
+                                Kolkata, India
+
+                                <span class="bb-label">Phone</span>
+                                <a href="tel:+916295448722">+91 6295448722</a>
+
+                                <span class="bb-label">Email</span>
+                                <a href="mailto:biswadip.bhattacharjee.ind@gmail.com">biswadip.bhattacharjee.ind@gmail.com</a>
+                            </address>
+                            <ul class="bb-footer-social">
+                                <li><a href="https://github.com/biswadip98" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/biswadip-bhattacharjee/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://x.com/BiswadipBhattacha7" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- end footer -->
+
+        </div>
+    </div>
+
+    <!-- ===== PASTE YOUR SCRIPTS HERE (see Task 10) ===== -->
+
+     <!-- Scripts -->
+    <script src="js/jquery/jquery.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Template scripts -->
+    <script src="js/megamenu/js/main.js"></script>
+    <script src="js/megamenu/js/onepage.js"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/owl-carousel/custom.js"></script>
+    <script src="js/template-custom/js/template-custom.js"></script>
+
+    <!-- Animations -->
+    <script type="text/javascript" src="js/animations/js/animations.min.js"></script>
+    <script type="text/javascript" src="js/animations/js/appear.min.js"></script>
+
+    <!-- Hide loader if present -->
+    <script>
+        $(window).load(function () {
+            setTimeout(function () {
+                $('.loader-live').fadeOut();
+            }, 1000);
+        })
+    </script>
+
+    <script src="js/functions/functions.js"></script>
+
+</body>
+
+</html>
