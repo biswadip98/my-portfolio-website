@@ -1,0 +1,49 @@
+services:
+  db:
+    image: postgres:16
+    container_name: portfolio-db
+    environment:
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: portfolio_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U portfolio -d portfolio_db"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - appnet
+
+  backend:
+    build: ./backend
+    image: portfolio-backend:v1
+    container_name: portfolio-backend
+    environment:
+      DATABASE_URL: postgresql+psycopg2://portfolio:devpassword@db:5432/portfolio_db
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    networks:
+      - appnet
+
+  frontend:
+    build: ./frontend
+    image: portfolio-frontend:v1
+    container_name: portfolio-frontend
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge
+
+volumes:
+  pgdata:
