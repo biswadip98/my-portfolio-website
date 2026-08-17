@@ -1,0 +1,16 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: portfolio
+nodes:
+  - role: control-plane
+    extraPortMappings:
+      # Map host port 8090 -> NodePort 30080 (frontend)
+      - containerPort: 30080
+        hostPort: 8090
+        protocol: TCP
+      # Map host port 8091 -> NodePort 30081 (backend)
+      - containerPort: 30081
+        hostPort: 8091
+        protocol: TCP
+  - role: worker
+  - role: worker

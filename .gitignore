@@ -1,1 +1,2 @@
 .history
+k8s/manifests/01-secret.yaml

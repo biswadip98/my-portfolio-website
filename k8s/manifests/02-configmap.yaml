@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: portfolio
+data:
+  POSTGRES_USER: portfolio
+  POSTGRES_DB: portfolio_db
+  # Postgres service name (we will create this Service next).
+  # Inside the cluster, pods reach each other by Service name.
+  DB_HOST: postgres
+  DB_PORT: "5432"
