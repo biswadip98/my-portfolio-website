@@ -1,0 +1,72 @@
+# ============================================================
+# Global / shared configuration
+# ============================================================
+namespace: portfolio
+
+# Non-secret app config (mirrors our ConfigMap).
+config:
+  postgresUser: portfolio
+  postgresDb: portfolio_db
+  dbHost: postgres
+  dbPort: "5432"
+
+# ============================================================
+# Postgres (database tier)
+# ============================================================
+postgres:
+  image:
+    repository: postgres
+    tag: "16"
+  storageSize: 1Gi
+  resources:
+    requests:
+      cpu: 50m
+      memory: 128Mi
+    limits:
+      cpu: 250m
+      memory: 256Mi
+
+# ============================================================
+# Backend (FastAPI tier)
+# ============================================================
+backend:
+  replicaCount: 2
+  image:
+    repository: portfolio-backend
+    tag: "v1"
+    pullPolicy: IfNotPresent
+  service:
+    port: 8000
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 250m
+      memory: 256Mi
+
+# ============================================================
+# Frontend (Nginx tier)
+# ============================================================
+frontend:
+  replicaCount: 2
+  image:
+    repository: portfolio-frontend
+    tag: "v1"
+    pullPolicy: IfNotPresent
+  service:
+    port: 80
+    nodePort: 30080
+  resources:
+    requests:
+      cpu: 25m
+      memory: 32Mi
+    limits:
+      cpu: 100m
+      memory: 128Mi
+     # ============================================================
+# Secrets (never commit real values — inject at install time)
+# ============================================================
+secrets:
+  # Injected via --set secrets.postgresPassword=... at install/upgrade.
+  postgresPassword: ""
