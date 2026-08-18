@@ -28,7 +28,7 @@ postgres:
 backend:
   replicaCount: 3
   image:
-    repository: portfolio-backend
+    repository: biswadipdevops/portfolio-backend
     tag: "v1"
     pullPolicy: IfNotPresent
   service:
@@ -46,7 +46,7 @@ backend:
 frontend:
   replicaCount: 2
   image:
-    repository: portfolio-frontend
+    repository: biswadipdevops/portfolio-frontend
     tag: "v1"
     pullPolicy: IfNotPresent
   service:
