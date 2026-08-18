@@ -29,7 +29,7 @@ backend:
   replicaCount: 3
   image:
     repository: biswadipdevops/portfolio-backend
-    tag: "v1"
+    tag: "d334fb3ce907be7e06d71770f498c94a1c386d4a"
     pullPolicy: IfNotPresent
   service:
     port: 8000
@@ -47,7 +47,7 @@ frontend:
   replicaCount: 2
   image:
     repository: biswadipdevops/portfolio-frontend
-    tag: "v1"
+    tag: "d334fb3ce907be7e06d71770f498c94a1c386d4a"
     pullPolicy: IfNotPresent
   service:
     port: 80
