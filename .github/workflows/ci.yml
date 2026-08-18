@@ -38,7 +38,7 @@ jobs:
           failure-threshold: warning
 
   build-and-scan:
-    name: Build and Scan Images
+    name: Build, Scan and Push Images
     runs-on: ubuntu-latest
     needs: [secret-scan, dockerfile-lint]
     steps:
@@ -89,3 +89,15 @@ jobs:
             --exit-code 1 \
             --format table \
             biswadipdevops/portfolio-frontend:${{ github.sha }}
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Push backend image
+        run: docker push biswadipdevops/portfolio-backend:${{ github.sha }}
+
+      - name: Push frontend image
+        run: docker push biswadipdevops/portfolio-frontend:${{ github.sha }}
