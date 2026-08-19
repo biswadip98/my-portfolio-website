@@ -44,7 +44,7 @@ backend:
 # Frontend (Nginx tier)
 # ============================================================
 frontend:
-  replicaCount: 2
+  replicaCount: 3
   image:
     repository: biswadipdevops/portfolio-frontend
     tag: "ff90cc097a56b0dde589ffb11fc328c2e7068bd0"
