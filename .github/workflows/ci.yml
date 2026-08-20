@@ -42,6 +42,23 @@ jobs:
           dockerfile: frontend/Dockerfile
           failure-threshold: warning
 
+  sast:
+      name: SAST (SonarQube Cloud)
+      runs-on: ubuntu-latest
+      steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: SonarQube Cloud Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
+        with:
+          args: >
+            -Dsonar.qualitygate.wait=true        
+
   build-and-scan:
     name: Build, Scan and Push Images
     runs-on: ubuntu-latest
