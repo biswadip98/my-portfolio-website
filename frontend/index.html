@@ -1,1211 +1,481 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Biswadip Bhattacharjee | Devops Engineer </title>
-    <meta name="keywords" content="DevOps Engineer, DevOps, DevOps portfolio, AWS Cloud Infrastructure expert" />
-    <meta name="description"
-        content="I am <b>Biswadip Bhattacharjee</b> a DevOps Engineer with a background in enterprise application development">
-    <meta name="author" content="Biswadip Bhattacharjee">
-
-    <!-- Mobile view -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon -->
-    <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
+    <title>Biswadip Bhattacharjee - DevOps &amp; Platform Engineer</title>
+    <meta name="keywords" content="DevOps Engineer, Platform Engineer, Kubernetes, GitOps, AWS, CI/CD, DevSecOps">
+    <meta name="description"
+        content="Biswadip Bhattacharjee - DevOps &amp; Platform Engineer specialising in CI/CD, GitOps, Kubernetes and cloud infrastructure automation.">
+    <meta name="author" content="Biswadip Bhattacharjee">
     <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.css">
-
-
-    <!-- Template's stylesheets -->
-    <link rel="stylesheet" href="js/megamenu/stylesheets/screen.css">
-    <link rel="stylesheet" href="js/megamenu/stylesheets/onepage.css">
-    <link rel="stylesheet" href="css/theme-default.css" type="text/css">
-    <link rel="stylesheet" href="js/loaders/stylesheets/screen.css">
-    <link rel="stylesheet" href="css/corporate.css" type="text/css">
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="fonts/Simple-Line-Icons-Webfont/simple-line-icons.css"
-        media="screen" />
-    <link rel="stylesheet" href="fonts/et-line-font/et-line-font.css">
-    <link rel="stylesheet" type="text/css" href="js/revolution-slider/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="js/revolution-slider/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="js/revolution-slider/css/navigation.css">
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
-    <link href="js/animations/css/animations.min.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- Template's stylesheets END -->
-
-    <!-- Style Customizer's stylesheets -->
-    <link rel="stylesheet/less" type="text/css" href="less/skin.less">
-    <!-- Style Customizer's stylesheets END -->
-
-    <!-- Skin stylesheet -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162535367-1"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-162535367-1');
-    </script>
-    <!--Google Analytics -->
-
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body data-spy="scroll" data-target="#menu">
+<body>
 
-        <div class="over-loader loader-live">
-            <div class="loader">
-                <div class="loader-item style4">
-                    <div class="cube1"></div>
-                    <div class="cube2"></div>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="top">
+        <div class="wrap nav">
+            <a href="#top" class="brand" aria-label="Biswadip Bhattacharjee - home">
+                <img src="images/logo-light-b.svg" alt="Biswadip Bhattacharjee">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Get in touch</a>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="wrap hero-grid">
+            <div>
+                <p class="hero-role">Aspiring AI Native DevOps &amp; Platform Engineer</p>
+                <h1>I automate the path from <span class="accent">commit</span> to production.</h1>
+                <p class="lead">
+                    I'm Biswadip Bhattacharjee - I design and run CI/CD pipelines, GitOps
+                    delivery and Kubernetes infrastructure so teams ship faster, safer and
+                    with less toil.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Let's work together</a>
+                    <a href="https://github.com/biswadip98" target="_blank" rel="noopener" class="btn btn-ghost">View GitHub</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><b>17+</b><span>tools &amp; platforms</span></div>
+                    <div class="stat"><b>GitOps</b><span>Argo CD · Sealed Secrets</span></div>
+                    <div class="stat"><b>DevSecOps</b><span>SAST · Trivy · gated CI</span></div>
+                </div>
+            </div>
+
+            <div class="term reveal" aria-hidden="true">
+                <div class="term-bar">
+                    <i></i><i></i><i></i>
+                    <span>argocd · portfolio</span>
+                </div>
+                <div class="term-body">
+                    <div class="cmd">argocd app get portfolio</div>
+                    <div class="app-status">
+                        <span class="badge ok">● Synced</span>
+                        <span class="badge ok">● Healthy</span>
+                    </div>
+                    <div class="cmd">gh run view --pipeline ci</div>
+                    <div style="margin-top:12px">
+                        <div class="stage"><span class="check">✓</span><b>secret-scan</b> gitleaks<span class="dur">4s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>sast</b> sonarqube gate<span class="dur">31s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>build</b> backend + frontend<span class="dur">52s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>scan</b> trivy · critical<span class="dur">9s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>deploy</b> argo cd → healthy<span class="dur">12s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>dast</b> owasp - zap<span class="dur">40s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>sota & dora</b> AI <span class="dur">19s</span></div>
+                        <div class="stage"><span class="check">✓</span><b>AI agent</b> observe → analyze → execute <span class="dur">loading</span></div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--end loading-->
-
-
-
-        <div id="section1"></div>
-        <div class="wrapper-boxed">
-            <div class="site-wrapper">
-
-                <div class="header-section style1 pin-style">
-                    <div class="container">
-                        <div class="mod-menu">
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <a href="#" title="" class="logo mar-4">
-                                        <img src="images/logo-light-b.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-sm-10">
-                                    <div class="main-nav" id="navbar-example">
-                                        <ul class="nav navbar-nav top-nav">
-                                            <li class="visible-xs menu-icon">
-                                                <a href="javascript:void(0)" class="navbar-toggle collapsed"
-                                                    data-toggle="collapse" data-target="#menu" aria-expanded="false">
-                                                    <i aria-hidden="true" class="fa fa-bars"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div id="menu" class="collapse">
-                                            <ul class="nav navbar-nav">
-                                                <li class="mega-menu active">
-                                                    <a href="#section1">Home</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#section2">About Me</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#section3">Experience</a>
-                                                </li>
-                                                <li>
-                                                    <a href="services.html">Service</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#section4">Tools</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#section5">Education</a>
-                                                </li>
-                                                <li class="right">
-                                                    <a href="#section6">Contact</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end menu-->
-
-                <div class="clearfix"></div>
-
-                <!-- START REVOLUTION SLIDER 5.0 -->
-                <div class="slide-tmargin">
-                    <div class="slidermaxwidth">
-                        <div class="rev_slider_wrapper">
-                            <!-- START REVOLUTION SLIDER 5.0 auto mode -->
-                            <div id="rev_slider" class="rev_slider" data-version="5.0">
-
-                                <ul>
-
-                                    <!-- SLIDE  -->
-                                    <li data-index="rs-1" data-transition="fade">
-
-                                        <!-- MAIN IMAGE -->
-                                        <img src="images/Slider-grey.jpg" alt="" width="1920" height="1280">
-
-                                        <!-- LAYER NR. 1 -->
-                                        <div class="tp-caption raleway white uppercase text-white tp-resizeme"
-                                            data-x="['center','center','center','center']"
-                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
-                                            data-voffset="['270','240','240','200']"
-                                            data-fontsize="['16','16','14','14']"
-                                            data-lineheight="['70','70','70','50']" data-width="none" data-height="none"
-                                            data-whitespace="nowrap" data-transform_idle="o:1;"
-                                            data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
-                                            data-start="2000" data-splitin="none" data-splitout="none"
-                                            data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"> </div>
-                                        <!--Multipage Design an many more sections-->
-
-                                        <!-- LAYER NR. 2 -->
-                                        <div class="tp-caption montserrat fweight-6 text-white tp-resizeme"
-                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
-                                            data-y="['top','top','top','top']" data-voffset="['320','100','100','110']"
-                                            data-fontsize="['70','70','50','30']"
-                                            data-lineheight="['100','100','100','50']" data-width="none"
-                                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                                            data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
-                                            data-start="3000" data-splitin="none" data-splitout="none"
-                                            data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                                            Passionate DevOps </div>
-
-                                        <!-- LAYER NR. 3 -->
-                                        <div class="tp-caption montserrat fweight-6 text-white tp-resizeme"
-                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
-                                            data-y="['top','top','top','top']" data-voffset="['390','150','150','150']"
-                                            data-fontsize="['70','60','50','30']"
-                                            data-lineheight="['100','100','100','50']" data-width="none"
-                                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                                            data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
-                                            data-start="3500" data-splitin="none" data-splitout="none"
-                                            data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                                            Engineer
-                                        </div>
-
-
-                                        <!-- LAYER NR. 4 -->
-                                        <div class="tp-caption sbut2 btn-round" data-x="['left','left','left','left']"
-                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
-                                            data-voffset="['550','350','370','300']" data-whitespace="nowrap"
-                                            data-type="text" data-responsive_offset="on"
-                                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":4500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
-                                            data-textAlign="['left','left','left','left']"
-                                            data-paddingtop="[10,10,10,10]" data-paddingright="[20,20,20,20]"
-                                            data-paddingbottom="[30,30,30,30]" data-paddingleft="[20,20,20,20]"
-                                            style="z-index: 7;"><a href="#section6">Get in
-                                                Touch!</a> </div>
-
-
-                                    </li>
-                                    <!-- SLIDE  -->
-                                    <li data-index="rs-2" data-transition="slideleft">
-
-                                        <!-- MAIN IMAGE -->
-                                        <img src="images/slider-tl.jpg" alt="" width="1920" height="1280">
-                                        <!-- LAYER NR. 1 -->
-                                        <div class="tp-caption raleway white uppercase text-white tp-resizeme"
-                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
-                                            data-y="['top','top','top','top']" data-voffset="['270','240','240','200']"
-                                            data-fontsize="['16','16','14','14']"
-                                            data-lineheight="['70','70','70','50']" data-width="none" data-height="none"
-                                            data-whitespace="nowrap" data-transform_idle="o:1;"
-                                            data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
-                                            data-start="2000" data-splitin="none" data-splitout="none"
-                                            data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"></div>
-                                        <!--Senior-->
-
-                                        <!-- LAYER NR. 2 -->
-                                        <div class="tp-caption montserrat fweight-6 text-white tp-resizeme"
-                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
-                                            data-y="['top','top','top','top']" data-voffset="['320','100','100','110']"
-                                            data-fontsize="['70','70','50','30']"
-                                            data-lineheight="['100','100','100','50']" data-width="none"
-                                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                                            data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
-                                            data-start="1000" data-splitin="none" data-splitout="none"
-                                            data-responsive_offset="on" style="z-index: 7; white-space: nowrap;"> Senior
-                                            Solution
-                                        </div>
-
-                                        <!-- LAYER NR. 3 -->
-                                        <div class="tp-caption montserrat fweight-6 text-white tp-resizeme"
-                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
-                                            data-y="['top','top','top','top']" data-voffset="['390','150','150','150']"
-                                            data-fontsize="['70','60','50','30']"
-                                            data-lineheight="['100','100','100','50']" data-width="none"
-                                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                                            data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
-                                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                                            data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;"
-                                            data-start="1500" data-splitin="none" data-splitout="none"
-                                            data-responsive_offset="on" style="z-index: 7; white-space: nowrap;">
-                                            Engineer
-                                        </div>
-                                        <!--Shop Pages-->
-
-
-                                        <!-- LAYER NR. 4 -->
-                                        <div class="tp-caption sbut2 btn-round" data-x="['left','left','left','left']"
-                                            data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
-                                            data-voffset="['550','350','370','300']" data-whitespace="nowrap"
-                                            data-type="text" data-responsive_offset="on"
-                                            data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":3000,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
-                                            data-textAlign="['left','left','left','left']"
-                                            data-paddingtop="[10,10,10,10]" data-paddingright="[20,20,20,20]"
-                                            data-paddingbottom="[30,30,30,30]" data-paddingleft="[20,20,20,20]"
-                                            style="z-index: 7;"><a href="#section6">Get in
-                                                Touch!</a> </div>
-
-
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- END REVOLUTION SLIDER -->
-                        </div>
-                    </div>
-                    <!-- END REVOLUTION SLIDER WRAPPER -->
-                </div>
-                <div class="clearfix"></div>
-                <!-- END OF SLIDER WRAPPER -->
-
-                <div id="section2"></div>
-
-                <section class="sec-padding-4">
-                    <div class="container-fluid">
-                        <div class="col-md-6 padding-left-8">
-                            <div class="col-md-10">
-                                <div class="col-sm-12 nopadding">
-                                    <div class="sec-title-container less-padding-4 text-center">
-                                        <h5 class="font-weight-4 less-mar-1 line-height-4 ce-title-top-text"
-                                            id="history">
-                                            Brief History</h5>
-                                        <h1 class="font-weight-6 less-mar-1 line-height-5">A developer turned DevOps
-                                            and Automation with a passion for Automate Everything</h1>
-                                        <div class="ce-title-line align-center"></div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <!--end title-->
-
-
-                                <p>I began my career as an intern software engineer at Approdance Technologies.
-                                    After that, I got employed at Cmile as a mobile application developer.
-                                    I am currently a senior consultant at Techno Exponent, and ever since I started
-                                    working there, I have been enamored with their corporate culture.
-                                    The following are some of the highlights of my career since I began working in the
-                                    software industry: </p>
-
-                                <br />
-                                <div class="col-md-6 nopadding">
-                                    <ul class="iconlist dark">
-                                        <li><i class="fa fa-check"></i> Experienced Consultant</li>
-                                        <li><i class="fa fa-check"></i> Thorough knowledge of SDLC </li>
-                                        <li><i class="fa fa-check"></i> In Deplth Understanding of Development Lifecycle
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-md-6 nopadding">
-                                    <ul class="iconlist dark">
-                                        <li><i class="fa fa-check"></i> Java / Kotlin Developer</li>
-                                        <li><i class="fa fa-check"></i> DevOps Lifestyle </li>
-                                        <li>
-                                            <link><i class="fa fa-check"></i> <a href="https://example.com"
-                                                target="_blank"> Fast Learner </a> </link>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="clearfix"></div>
-                                <br /><br />
-                                <!--TODO : Implement read more for detailes--><a
-                                    class="btn btn-dark btn-round btn-medium uppercase" href="#section6"><i
-                                        class="fa fa-play-circle" aria-hidden="true"></i> Know more</a>
-                            </div>
-                            <!--end item-->
-                        </div>
-                        <!--end item-->
-                        <lottie-player class="col-md-5 animate-in" data-anim-type="fade-in-left" data-anim-delay="100"
-                            src="https://assets5.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent"
-                            speed="1" style="width: 100%; max-width: 620px; height: auto; min-height: 480px;" hover
-                            loop></lottie-player>
-                    </div>
-                    <!--end item-->
-                </section>
-                <div class="clearfix"></div>
-
-                <!-- end section -->
-
-
-                <div id="section3"></div>
-                <section class="section-light-3 clearfix">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="sec-title-container text-center">
-                                    <h5 class="font-weight-4 less-mar-1 line-height-4 opacity-5">Previous experience
-                                    </h5>
-                                    <h1 class="font-weight-6 less-mar-1 line-height-5">Who am I and What I do</h1>
-                                    <div class="ce-title-line align-center"></div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <!--end title-->
-
-                            <div class="col-md-4">
-                                <div class="ce-feature-box-57 text-left">
-                                    <div class="icon-plain-small left dark icon animate-burst"><span
-                                            class="icon-layers"></span></div>
-                                    <div class=" text-box-right text-left">
-                                        <p class="text-primary nopadding">Approdance Technologies (Work From Home)</p>
-                                        <h5 class="title font-weight-5">Software Engineer Intern</h5>
-                                        <p>As an integral part of the Approdance team, I worked as an <b>Intern Software
-                                                Engineer</b> for 6 months to understand the nuances of software
-                                            development. Thorough understanding of SDLD and design patterns.
-                                            I trained on mobile application development during this time.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end item-->
-
-                            <div class="col-md-4 ">
-                                <div class="ce-feature-box-57 text-left">
-                                    <div class="icon-plain-small left dark icon animate-burst"><span
-                                            class="icon-phone"></span></div>
-                                    <div class="text-box-right text-left">
-                                        <p class="text-primary nopadding">Cmile (Pune)</p>
-                                        <h5 class="title font-weight-5">Android Application Developer</h5>
-                                        <p>As an <b>Android Application Developer</b>, I developed an Android
-                                            OS-friendly mobile application using the Android SDK.
-                                            Developed different types of mobile applications with different design
-                                            patterns and screen- and build-responsive applications.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end item-->
-
-                            <div class="col-md-4 ">
-                                <div class="ce-feature-box-57 text-left">
-                                    <div class="icon-plain-small left dark icon animate-burst"><span
-                                            class="icon-puzzle"></span></div>
-                                    <div class=" text-box-right text-left">
-                                        <p class="text-primary nopadding">Techno Exponent (Kolkata)</p>
-                                        <h5 class="title font-weight-5">Senior Consultant</h5>
-                                        <p>Currently working as a <b>Senior Consultant and Solution Engineer</b> with
-                                            the TE team to deliver the high-quality,
-                                            market-standard, reliable, optimized, and production-ready scalable
-                                            software.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end item-->
-
-                            <div class="clearfix"></div>
-                            <div class="col-divider-margin-4"></div>
-                            <!-- <div class="col-md-4">
-                            <div class="ce-feature-box-57 text-left">
-                                <div class="icon-plain-small left dark icon animate-burst"><span
-                                        class="icon-layers"></span></div>
-                                <div class=" text-box-right text-left">
-                                    <p class="text-primary nopadding">Siemens Simulation Center (Pune)</p>
-                                    <h5 class="title font-weight-5">Java Developer</h5>
-                                    <p>As an integral part of Teamcenter Simulation team, worked as a <b> Java Developer
-                                        </b> for more than 3 years to understand the nuances of Core Java development.
-                                        Thorough understanding of Object Oriented Programming and
-                                        Design Patterns. I also worked on RCP Plugin development during this time.</p>
-                                </div>
-                            </div>
-                        </div> -->
-                            <!--end item-->
-
-                            <!-- <div class="col-md-4">
-                            <div class="ce-feature-box-57 text-left">
-                                <div class="icon-plain-small left dark icon animate-burst"><span
-                                        class="icon-genius"></span></div>
-                                <div class=" text-box-right text-left">
-                                    <p class="text-primary nopadding">Siemens MindShpere - IIOT Product (Pune)</p>
-                                    <h5 class="title font-weight-5">DevOps Engineer</h5>
-                                    <p>As a DevOps Engineer, I started with cultivating the DevOps culture when we moved
-                                        from Monolith to Agile Implementation. Further automated the process end-to-end.
-                                        Right from Building the code <b>(CI) </b>to deploying it to different
-                                        enviornment <b>(CD)</b>.
-                                        Recently started creating Infrastructure with the help of code <b>(IAC)</b>.</p>
-                                </div>
-                            </div>
-                        </div> -->
-                            <!--end item-->
-                            <!-- <div class="col-md-4">
-                            <div class="ce-feature-box-57 text-left">
-                                <div class="icon-plain-small left dark icon animate-burst"><span
-                                        class="icon-cloud"></span></div>
-                                <div class=" text-box-right text-left">
-                                    <p class="text-primary nopadding">Siemens MindShpere - IIOT Product (Pune)</p>
-                                    <h5 class="title font-weight-5">Cloud DevOps Expert</h5>
-                                    <p>With more than 3 years in DevOps, I have gained knowlege of <b>Microsoft
-                                            Azure</b> and
-                                        <b>AWS,</b> thoroughly understanding the CI and CD process. Comfortable at
-                                        managing multiple enviornments and infrastructure with <b>IAC (Terraform).</b> Developed a
-                                        deep knowledge and understanding of
-                                        <b>End-to-End Monitoring</b> of Cloud Native <b>Paas Application</b>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
-                            <!--end item-->
-                            <div class="clearfix"></div>
-                            <div class="col-divider-margin-4"></div>
-                            <!-- <div class="col-md-4">
-                            <div class="ce-feature-box-57 text-left">
-                                <div class="icon-plain-small left dark icon animate-burst"><span
-                                        class="icon-toolbox"></span></div>
-                                <div class=" text-box-right text-left">
-                                    <p class="text-primary nopadding">Equal Experts (Pune)</p>
-                                    <h5 class="title font-weight-5">Senior DevOps Consultant</h5>
-                                    <p>Started working as a <b>Senior DevOps Consultant</b> for Equal Experts Pune. Working with
-                                        numurous clients like O2, Waitrose etc. Working with wider stake holders and defining the Processes and Patterns
-                                    for the DevOps/Platform teams.</p>
-                                </div>
-                            </div>
-                        </div> -->
-                            <!--end item-->
-                            <!-- <div class="col-md-4">
-                            <div class="ce-feature-box-57 text-left">
-                                <div class="icon-plain-small left dark icon animate-burst"><span
-                                        class="icon-basket"></span></div>
-                                <div class=" text-box-right text-left">
-                                    <p class="text-primary nopadding">New Look (London)</p>
-                                    <h5 class="title font-weight-5">Senior DevOps Engineer</h5>
-                                    <p>Joined the new DevOps Team as one of the first member and started working on <b>E-Commerce</b> project to revamp the
-                                        existing monolithic website into a managable and modern micro service oriented web platform.</p>
-                                </div>
-                            </div>
-                        </div> -->
-                            <!--end item-->
-                            <!-- <div class="col-md-4">
-                            <div class="ce-feature-box-57 text-left">
-                                <div class="icon-plain-small left dark icon animate-burst"><span
-                                        class="icon-strategy"></span></div>
-                                <div class=" text-box-right text-left">
-                                    <p class="text-primary nopadding">New Look (London)</p>
-                                    <h5 class="title font-weight-5">Lead Senior DevOps Engineer</h5>
-                                    <p>Created a internal developer platform which was adopted by the wider New Look business units and I was quickly promoted
-                                        as a Lead Senior DevOps Engineer. Now I am leading a team of <b>Platform Engineers</b> across New Look working and defining the <b>roadmap</b> and 
-                                        <b>strategy</b> for the business.
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
-                            <!--end item-->
-                        </div>
-                    </div>
-                </section>
-                <div class="clearfix"></div>
-                <!-- end section -->
-
-
-                <!--Section 4 Header -->
-                <div id="section4"></div>
-                <section class="section-side-image section-light sec-padding clearfix">
-                    <div class="img-holder col-md-12 col-sm-12 pull-left">
-                        <div class="background-imgholder" style="background:url(images/FoggyMountains.jpg);"><img
-                                class="nodisplay-image" src="" alt="" /> </div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <!-- end header section -->
-
-                            <section class="section-light-3 clearfix">
-                                <div class="col-sm-12">
-                                    <div class="sec-title-container text-center">
-                                        <h5 class="font-weight-4 less-mar-1 line-height-4 opacity-5">Tricks of the trade
-                                        </h5>
-                                        <h1 class="font-weight-6 less-mar-1 line-height-5">Tools and Technologies I am
-                                            comfortable using</h1>
-                                        <div class="ce-title-line align-center"></div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </section>
-                            <div class="clearfix"></div>
-                            <!-- end title -->
-
-                            <!-- Filter buttons -->
-                            <div id="js-filters-masonry-projects" class="cbp-l-filters-buttonCenter">
-                                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
-                                    All
-                                    <div class="cbp-filter-counter"></div>
-                                </div>
-                                <div data-filter=".language" class="cbp-filter-item">
-                                    Programming Language
-                                    <div class="cbp-filter-counter"></div>
-                                </div>
-                                <div data-filter=".mobile" class="cbp-filter-item">
-                                    Mobile Application Development
-                                    <div class="cbp-filter-counter"></div>
-                                </div>
-                                <div data-filter=".api" class="cbp-filter-item">
-                                    API
-                                    <div class="cbp-filter-counter"></div>
-                                </div>
-                                <div data-filter=".ops-tools" class="cbp-filter-item">
-                                    Ops Tools
-                                    <div class="cbp-filter-counter"></div>
-                                </div>
-                                <div data-filter=".cloud-platform" class="cbp-filter-item">
-                                    Cloud Platform
-                                    <div class="cbp-filter-counter"></div>
-                                </div>
-                            </div>
-
-                            <!-- Grid -->
-                            <div id="js-grid-masonry-projects" class="cbp cbp-l-grid-masonry-projects">
-
-                                <!-- ===== Programming Languages ===== -->
-                                <div class="cbp-item language">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Java.jpg" alt="Java">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Java</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Language</div>
-                                </div>
-
-                                <div class="cbp-item language">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Kotlin.png" alt="Kotlin">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Kotlin</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Language</div>
-                                </div>
-
-                                <div class="cbp-item language">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Python.jpg" alt="Python">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Python</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Language</div>
-                                </div>
-
-                                <!-- ===== Mobile Application Development ===== -->
-                                <div class="cbp-item mobile">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Kotlin.png" alt="Kotlin">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Kotlin</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Android Development</div>
-                                </div>
-
-                                <!-- ===== API ===== -->
-                                <div class="cbp-item api">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/REST.jpg" alt="REST API">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">REST API</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">API</div>
-                                </div>
-
-                                <!-- ===== Ops Tools ===== -->
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Linux.png" alt="Linux">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Linux</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Operating System</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/git.jpg" alt="Git">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Git</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Version Control (SCM)</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/GitHubAction.png"
-                                                alt="GitHub Actions">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">GitHub
-                                        Actions</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">CI / CD Automation</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Docker.png" alt="Docker">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Docker</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Containerization</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Kubernetes.png"
-                                                alt="Kubernetes">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Kubernetes</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Container Orchestration</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Helm.png" alt="Helm">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Helm</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Kubernetes Package Manager</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Terraform.jpg"
-                                                alt="Terraform">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Terraform</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Infrastructure as Code</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Ansible.png"
-                                                alt="Ansible">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Ansible</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Configuration Management</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/ArgoCD.png" alt="Argo CD">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Argo CD</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Continuous Delivery (GitOps)</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/GitOps.jpg" alt="GitOps">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">GitOps</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Delivery Practice</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Grafana.jpg"
-                                                alt="Grafana">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Grafana</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Monitoring and Dashboards</div>
-                                </div>
-
-                                <div class="cbp-item ops-tools">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/Prometheus.png"
-                                                alt="Prometheus">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">Prometheus</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Monitoring and Alerting</div>
-                                </div>
-
-                                <!-- ===== Cloud Platform ===== -->
-                                <div class="cbp-item cloud-platform">
-                                    <div class="cbp-caption">
-                                        <div class="cbp-caption-defaultWrap">
-                                            <img class="portfolio-item" src="images/portfolio/AWS.jpg" alt="AWS">
-                                        </div>
-                                        <div class="cbp-caption-activeWrap">
-                                            <div class="cbp-l-caption-alignCenter">
-                                                <div class="cbp-l-caption-body"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="cbp-l-grid-masonry-projects-title" rel="nofollow">AWS</a>
-                                    <div class="cbp-l-grid-masonry-projects-desc">Cloud Platform</div>
-                                </div>
-
-                            </div>
-
-                </section>
-                <div class="clearfix"></div>
-                <!-- end section -->
-
-                <div class="divider-line solid light-2"></div>
-                <div class="clearfix"></div>
-                <!-- Portfolio end -->
-                <div id="section5"></div>
-                <section class="sec-padding-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="sec-title-container text-center">
-                                    <h5 class="font-weight-4 less-mar-1 line-height-4 ce-title-top-text">Educational
-                                        Background</h5>
-                                    <h1 class="font-weight-6 less-mar-1 line-height-5">Details about School and College
-                                    </h1>
-                                    <!-- <div class="ce-title-line"></div> -->
-                                </div>
-                            </div>
-                            <!-- <div class="clearfix"></div> -->
-                            <!--end title-->
-                            <section class="sec-padding section-light">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-12 text-center">
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <div class="text-box white padding-4">
-                                                <div class="icon-plain-msmall"><span class="icon-pencil icon"></span>
-                                                </div>
-                                                <br />
-                                                <h4 class=" font-weight-4">X <sup>th</sup> (WBBSE)</h4>
-                                                <p>Completed preliminary education with <b>Bengali, Hindi, English
-                                                    </b>as
-                                                    main languages</p>
-                                                <br />
-                                                <!-- <a class="read-more gyellow" href="#">Read More &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>-->
-                                            </div>
-                                        </div>
-                                        <!--end item-->
-
-                                        <div class="col-md-4">
-                                            <div class="text-box white padding-4">
-                                                <div class="icon-plain-msmall"><span
-                                                        class=" icon icon-documents"></span>
-                                                </div>
-                                                <br />
-                                                <h4 class=" font-weight-4">XII <sup>th</sup> (WBBHSE)</h4>
-                                                <p>Completed Higher Secondary education
-                                                    <!-- <b>Computer Science</b> -->
-                                                </p>
-                                                <br />
-                                                <!-- <a class="read-more gyellow" href="#">Read More &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-                                            </div>
-                                        </div>
-                                        <!--end item-->
-
-
-                                        <div class="col-md-4">
-                                            <div class="text-box white padding-4">
-                                                <div class="icon-plain-msmall"><span class="icon icon-toolbox"></span>
-                                                </div>
-                                                <br />
-                                                <h4 class=" font-weight-4">Bachelor of Technology (B.tech)</h4>
-                                                <p>Completed Bachelor's degree in Engineering <b>(Computer Science
-                                                        Engineering)</b> from
-                                                    <b>West Bengal University of Technology (MAKAUT), India</b>
-                                                </p>
-                                                <br />
-                                                <!-- <a class="read-more gyellow" href="#">Read More &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a> -->
-                                            </div>
-                                        </div>
-                                        <!--end item-->
-                                    </div>
-                            </section>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="clearfix"></div>
-                <!-- end section -->
-
-
-                <!-- Contact -->
-                <div id="section6"></div>
-                <section class="bb-contact sec-padding clearfix">
-                    <div class="container">
-                        <div class="row bb-contact-row">
-                            <div class="col-md-5 col-sm-12 bb-contact-photo-col">
-                                <div class="bb-contact-photo" style="background-image:url(images/biswadip-b1.jpg);">
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-sm-12 bb-contact-form-col">
-                                <div class="sec-title-container text-left">
-                                    <h5 class="font-weight-4 less-mar-1 line-height-4 opacity-5 text-white">Let's
-                                        connect</h5>
-                                    <h1 class="font-weight-6 less-mar-1 line-height-5 text-white">Get in touch</h1>
-                                    <!-- <div class="ce-title-line"></div> -->
-                                </div>
-
-                                <form action="https://api.web3forms.com/submit" method="POST" class="bb-cform">
-                                    <input type="hidden" name="access_key" value="8affceb1-4b2b-4322-b59c-6d44248782d6">
-                                    <input type="hidden" name="subject" value="New message from portfolio website">
-                                    <input type="hidden" name="from_name" value="Biswadip Portfolio">
-                                    <input type="checkbox" name="botcheck" class="bb-hidden" tabindex="-1"
-                                        autocomplete="off">
-
-                                    <input type="text" name="name" placeholder="Your Name" required>
-                                    <input type="email" name="email" placeholder="Your Email" required>
-                                    <input type="text" name="phone" placeholder="Your Phone (optional)">
-                                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                                    <button type="submit" class="bb-cform-btn">Send Message</button>
-                                </form>
-
-                                <p class="bb-contact-alt text-white">Prefer email? <a
-                                        href="mailto:biswadip.bhattacharjee.ind@gmail.com">biswadip.bhattacharjee.ind@gmail.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="clearfix"></div>
-
-
-                <!-- Footer start -->
-                <div class="sec-padding-4 bb-footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 clearfix margin-bottom">
-                                <div class="fo-map bb-brand">
-                                    <div class="footer-logo"><a href="#section1"><img src="images/logo-dark-b.svg"
-                                                alt="Biswadip Bhattacharjee" /></a></div>
-                                    <p class="bb-brand-tag">DevOps Engineer · Automating everything, one pipeline at a
-                                        time🌐.</p>
-                                    <p class="bb-brand-about">I love meeting new people and swapping stories over a
-                                        coffee or a beer about technology, career, life stories, the struggles, and the
-                                        journeys that shape our life😊.</p>
-                                    <p class="bb-brand-cta">Let's build something great together, just say <a
-                                            href="#section6">Hi!</a> 👋</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6 clearfix margin-bottom">
-                                <h4 class="less-mar3 font-weight-5 bb-footer-title">Quick Links</h4>
-                                <ul class="footer-quick-links-5 bb-footer-links">
-                                    <li><a href="#section1">Home</a></li>
-                                    <li><a href="#section2">About Me</a></li>
-                                    <li><a href="#section3">Experience</a></li>
-                                    <li><a href="#section4">Tools</a></li>
-                                    <li><a href="#section5">Education</a></li>
-                                    <li><a href="#section6">Contact</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6 clearfix margin-bottom">
-                                <h4 class="less-mar3 font-weight-5 bb-footer-title">Skill Set</h4>
-                                <ul class="footer-quick-links-5 bb-footer-links">
-                                    <li>Software Engineer</li>
-                                    <li>Mobile Application developer</li>
-                                    <li>Solution Engineer</li>
-                                    <li>DevOps Evangelist</li>
-                                    <li>Aspiring Agentic AI DevOps</li>
-                                    <li>Hobbyist Traveller</li>
-                                </ul>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6 clearfix margin-bottom">
-                                <h4 class="less-mar3 font-weight-5 bb-footer-title">Contact Me</h4>
-                                <address class="bb-footer-contact">
-                                    <span class="bb-label">Current City</span>
-                                    Kolkata, India
-
-                                    <span class="bb-label">Phone</span>
-                                    <a href="tel:+916295448722">+91 6295448722</a>
-
-                                    <span class="bb-label">Email</span>
-                                    <a
-                                        href="mailto:biswadip.bhattacharjee.ind@gmail.com">biswadip.bhattacharjee.ind@gmail.com</a>
-                                </address>
-                                <ul class="bb-footer-social">
-                                    <li><a href="https://github.com/biswadip98" target="_blank" rel="noopener"
-                                            aria-label="GitHub"><i class="fa fa-github"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/biswadip-bhattacharjee/" target="_blank"
-                                            rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="https://x.com/BiswadipBhattacha7" target="_blank" rel="noopener"
-                                            aria-label="Twitter / X"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://facebook.com" target="_blank" rel="noopener"
-                                            aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://instagram.com" target="_blank" rel="noopener"
-                                            aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <!-- end footer -->
-
-                <section class="sec-padding-6 section-light">
-                    <div class="container">
-                        <div class="row">
-                            <div class="fo-copyright-holder text-center"> Copyright © 2026 Biswadip Bhattacharjee. All
-                                rights
-                                reserved. </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="clearfix"></div>
-                <!-- end section -->
-
-                <a href="#" class="scrollup"></a>
-                <!-- end scroll to top of the page-->
-
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+        <div class="wrap about-grid">
+            <div class="about-photo reveal">
+                <img src="images/biswadip-b1.jpg" alt="Biswadip Bhattacharjee">
+                <div class="tag"><span class="dot"></span> Based in Kolkata, India</div>
             </div>
-            <!--end site wrapper-->
+            <div class="about-body">
+                <p class="kicker">About me</p>
+                <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">A solution consultant growing into DevOps and platform engineering.</h2>
+                <p style="margin-top:18px">
+                    I work as a Senior Consultant &amp; Solution Engineer at Techno Exponent, where my
+                    job is to understand what a business actually needs and turn it into reliable,
+                    production-ready software. Consulting keeps me close to the whole delivery picture
+                    - requirements, stakeholders, architecture and the realities of shipping to
+                    production - not just one slice of it.
+                </p>
+                <p>
+                    I'm channelling that end-to-end view into DevOps and platform engineering. The same
+                    instinct that makes a good solution engineer - seeing how every piece connects and
+                    where delivery breaks down - is exactly what CI/CD pipelines, GitOps and
+                    infrastructure automation are built to solve. I've been putting it into practice
+                    hands-on: automated pipelines, GitOps delivery with Argo CD, containerised workloads
+                    on Kubernetes, and infrastructure as code.
+                </p>
+                <p>
+                    My start in software - an engineering internship, then mobile application
+                    development - means I understand both sides of the wall: the code that gets shipped
+                    and the pipelines and infrastructure that ship it. I care about clean pipelines,
+                    reproducible infrastructure, and secure-by-default delivery.
+                </p>
+                <ul class="about-list">
+                    <li>CI/CD &amp; GitOps delivery</li>
+                    <li>Kubernetes &amp; containers</li>
+                    <li>Infrastructure as Code</li>
+                    <li>Cloud on AWS</li>
+                    <li>Observability &amp; monitoring</li>
+                    <li>Solution &amp; delivery consulting</li>
+                </ul>
+            </div>
         </div>
-        <!--end wrapper boxed-->
+    </section>
 
-        <!-- Scripts -->
-        <script src="js/jquery/jquery.js"></script>
-        <script src="js/sticky/js/jquery.sticky.js"></script>
-        <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- ================= WHAT I DO ================= -->
+    <section class="dark">
+        <div class="wrap">
+            <div class="sec-head">
+                <p class="kicker">What I do</p>
+                <h2>Engineering the delivery pipeline, end to end.</h2>
+                <p>From the first commit to a healthy production deploy - automated, observable and secure.</p>
+            </div>
+            <div class="do-grid">
+                <div class="do-card reveal">
+                    <div class="ic">⌘</div>
+                    <h3>CI/CD Automation</h3>
+                    <p>Multi-stage GitHub Actions pipelines with fail-fast gates so only tested, scanned builds reach production.</p>
+                </div>
+                <div class="do-card reveal">
+                    <div class="ic">∞</div>
+                    <h3>GitOps Delivery</h3>
+                    <p>Argo CD driving declarative deployments straight from Git, with automated sync, self-heal and secret management.</p>
+                </div>
+                <div class="do-card reveal">
+                    <div class="ic">▤</div>
+                    <h3>Kubernetes &amp; IaC</h3>
+                    <p>Containerised workloads on Kubernetes, packaged with Helm and provisioned reproducibly through Terraform.</p>
+                </div>
+                <div class="do-card reveal">
+                    <div class="ic">◎</div>
+                    <h3>DevSecOps &amp; Observability</h3>
+                    <p>Security scanning built into the pipeline, plus Prometheus &amp; Grafana monitoring for real visibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="work">
+        <div class="wrap">
+            <div class="sec-head">
+                <p class="kicker">Experience</p>
+                <h2>Where I've worked and what I've built.</h2>
+            </div>
+            <div class="timeline">
+                <div class="tl-item reveal">
+                    <span class="when">Current</span>
+                    <h3>Senior Consultant &amp; Solution Engineer</h3>
+                    <div class="org">Techno Exponent <span>· Kolkata</span></div>
+                    <p>
+                        Delivering high-quality, production-ready and scalable software at Techno Exponent, 
+                        I work between clients and delivery teams - shaping business needs into platforms 
+                        and staying close to how that software gets built, released and run. 
+                        Channelling that delivery-first experience into DevOps - CI/CD, GitOps, 
+                        Kubernetes and cloud infrastructure - to engineer and ship reliable, repeatable systems myself. 
+                    </p>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="when">Earlier</span>
+                    <h3>Android Application Developer</h3>
+                    <div class="org">Cmile <span>· Pune</span></div>
+                    <p>
+                        As an Android Application Developer at Cmile, I built native Android apps with the Android SDK, applying clean, 
+                        testable design patterns and keeping them responsive across different screen sizes and device configurations. 
+                        It's where I got a real feel for the full mobile delivery cycle - writing the code, building it reliably, and 
+                        shipping it to users.
+                    </p>
+                </div>
+                <div class="tl-item reveal">
+                    <span class="when">Start</span>
+                    <h3>Software Engineer Intern</h3>
+                    <div class="org">Approdance Technologies <span>· Remote</span></div>
+                    <p>
+                        Where my career in software began. Over six months I worked with a development team across the full SDLC 
+                        - translating requirements into features, writing and reviewing code, and testing and debugging real applications. 
+                        It gave me a solid grounding in design patterns, version control with Git, and disciplined, collaborative development, 
+                        with a focus on mobile application development that shaped the work I took on next.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Scripts END -->
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" style="background:var(--paper)">
+        <div class="wrap">
+            <div class="sec-head">
+                <p class="kicker">Tools &amp; technologies</p>
+                <h2>The stack I build and ship with.</h2>
+                <p>Filter by area, or browse the full toolkit I use day to day.</p>
+            </div>
 
-        <!-- Template scripts -->
-        <script src="js/megamenu/js/main.js"></script>
-        <script src="js/megamenu/js/onepage.js"></script>
-        <script src="js/owl-carousel/owl.carousel.js"></script>
-        <script src="js/owl-carousel/custom.js"></script>
-        <script src="js/template-custom/js/template-custom.js"></script>
+            <div class="filter-bar" id="filterBar">
+                <button class="chip active" data-filter="all">All</button>
+                <button class="chip" data-filter="lang">Languages</button>
+                <button class="chip" data-filter="cicd">CI/CD &amp; GitOps</button>
+                <button class="chip" data-filter="container">Containers &amp; Orchestration</button>
+                <button class="chip" data-filter="iac">IaC &amp; Config</button>
+                <button class="chip" data-filter="cloud">Cloud</button>
+                <button class="chip" data-filter="observe">Observability</button>
+            </div>
 
+            <div class="skill-grid" id="skillGrid">
+                <div class="skill" data-cat="lang"><img src="images/portfolio/Java.jpg" alt="Java"><div><b>Java</b><small>Language</small></div></div>
+                <div class="skill" data-cat="lang"><img src="images/portfolio/Kotlin.png" alt="Kotlin"><div><b>Kotlin</b><small>Language</small></div></div>
+                <div class="skill" data-cat="lang"><img src="images/portfolio/Python.jpg" alt="Python"><div><b>Python</b><small>Language</small></div></div>
+                <div class="skill" data-cat="lang"><img src="images/portfolio/REST.jpg" alt="REST API"><div><b>REST API</b><small>Integration</small></div></div>
+                <div class="skill" data-cat="cicd"><img src="images/portfolio/GitHubAction.png" alt="GitHub Actions"><div><b>GitHub Actions</b><small>CI/CD</small></div></div>
+                <div class="skill" data-cat="cicd"><img src="images/portfolio/ArgoCD.png" alt="Argo CD"><div><b>Argo CD</b><small>GitOps CD</small></div></div>
+                <div class="skill" data-cat="cicd"><img src="images/portfolio/GitOps.jpg" alt="GitOps"><div><b>GitOps</b><small>Practice</small></div></div>
+                <div class="skill" data-cat="cicd"><img src="images/portfolio/git.jpg" alt="Git"><div><b>Git</b><small>Version control</small></div></div>
+                <div class="skill" data-cat="container"><img src="images/portfolio/Docker.png" alt="Docker"><div><b>Docker</b><small>Containers</small></div></div>
+                <div class="skill" data-cat="container"><img src="images/portfolio/Kubernetes.png" alt="Kubernetes"><div><b>Kubernetes</b><small>Orchestration</small></div></div>
+                <div class="skill" data-cat="container"><img src="images/portfolio/Helm.png" alt="Helm"><div><b>Helm</b><small>Packaging</small></div></div>
+                <div class="skill" data-cat="iac"><img src="images/portfolio/Terraform.jpg" alt="Terraform"><div><b>Terraform</b><small>IaC</small></div></div>
+                <div class="skill" data-cat="iac"><img src="images/portfolio/Ansible.png" alt="Ansible"><div><b>Ansible</b><small>Config mgmt</small></div></div>
+                <div class="skill" data-cat="iac"><img src="images/portfolio/Linux.png" alt="Linux"><div><b>Linux</b><small>Operating system</small></div></div>
+                <div class="skill" data-cat="cloud"><img src="images/portfolio/AWS.jpg" alt="AWS"><div><b>AWS</b><small>Cloud platform</small></div></div>
+                <div class="skill" data-cat="observe"><img src="images/portfolio/Prometheus.png" alt="Prometheus"><div><b>Prometheus</b><small>Metrics &amp; alerts</small></div></div>
+                <div class="skill" data-cat="observe"><img src="images/portfolio/Grafana.jpg" alt="Grafana"><div><b>Grafana</b><small>Dashboards</small></div></div>
+            </div>
+        </div>
+    </section>
 
-        <!-- REVOLUTION JS FILES -->
-        <script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="dark">
+        <div class="wrap">
+            <div class="sec-head">
+                <p class="kicker">Education</p>
+                <h2>Academic foundation.</h2>
+                <p>A computer-science background from West Bengal, India.</p>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card reveal">
+                    <span class="yr">Undergraduate</span>
+                    <h3>B.Tech, Computer Science &amp; Engineering</h3>
+                    <div class="inst">MAKAUT (West Bengal University of Technology)</div>
+                    <p>Bachelor's degree in Computer Science &amp; Engineering - the core grounding in systems, networks and software engineering.</p>
+                </div>
+                <div class="edu-card reveal">
+                    <span class="yr">Higher Secondary</span>
+                    <h3>XII - WBCHSE</h3>
+                    <div class="inst">West Bengal Council of Higher Secondary Education</div>
+                    <p>Completed Higher Secondary Education (Class 12) under the West Bengal Council of Higher Secondary Education (WBCHSE).</p>
+                </div>
+                <div class="edu-card reveal">
+                    <span class="yr">Secondary</span>
+                    <h3>X - WBBSE</h3>
+                    <div class="inst">West Bengal Board of Secondary Education</div>
+                    <p>Completed secondary education with Bengali, Hindi and English as main languages .</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script type="text/javascript">
-            var tpj = jQuery;
-            var revapi4;
-            tpj(document).ready(function () {
-                if (tpj("#rev_slider").revolution == undefined) {
-                    revslider_showDoubleJqueryError("#rev_slider");
-                } else {
-                    revapi4 = tpj("#rev_slider").show().revolution({
-                        sliderType: "standard",
-                        jsFileLocation: "js/revolution-slider/js/",
-                        sliderLayout: "auto",
-                        dottedOverlay: "none",
-                        delay: 9000,
-                        navigation: {
-                            keyboardNavigation: "off",
-                            keyboard_direction: "horizontal",
-                            mouseScrollNavigation: "off",
-                            onHoverStop: "off",
-                            arrows: {
-                                style: "uranus",
-                                enable: true,
-                                hide_onmobile: false,
-                                hide_under: 100,
-                                hide_onleave: true,
-                                hide_delay: 200,
-                                hide_delay_mobile: 1200,
-                                tmp: '',
-                                left: {
-                                    h_align: "left",
-                                    v_align: "center",
-                                    h_offset: 80,
-                                    v_offset: 0
-                                },
-                                right: {
-                                    h_align: "right",
-                                    v_align: "center",
-                                    h_offset: 80,
-                                    v_offset: 0
-                                }
-                            },
-                            touch: {
-                                touchenabled: "on",
-                                swipe_threshold: 75,
-                                swipe_min_touches: 1,
-                                swipe_direction: "horizontal",
-                                drag_block_vertical: false
-                            },
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="dark" style="background:linear-gradient(180deg,var(--ink),#081120)">
+        <div class="wrap contact-grid">
+            <div class="contact-info">
+                <p class="kicker">Let's connect</p>
+                <h2>Have a project or a role in mind?</h2>
+                <p>I'm always happy to talk Engineering, infrastructure, pipelines, or a good opportunity - drop me a message and I'll get back to you.</p>
 
+                <a class="c-line" href="mailto:biswadip.bhattacharjee.ind@gmail.com">
+                    <span class="ci">✉</span>
+                    <span><small>Email</small><b>biswadip.bhattacharjee.ind@gmail.com</b></span>
+                </a>
+                <a class="c-line" href="tel:+916295448722">
+                    <span class="ci">☎</span>
+                    <span><small>Phone</small><b>+91 62954 48722</b></span>
+                </a>
+                <div class="c-line">
+                    <span class="ci">⚲</span>
+                    <span><small>Location</small><b>Kolkata, India</b></span>
+                </div>
 
+                <div class="socials">
+                    <a href="https://github.com/biswadip98" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/biswadip-bhattacharjee/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+                    </a>
+                    <a href="https://x.com/BiswadipBhattacha7" target="_blank" rel="noopener" aria-label="X">
+                        <svg viewBox="0 0 24 24"><path d="M18.9 1.2h3.7l-8 9.1L24 22.8h-7.4l-5.8-7.6-6.6 7.6H.5l8.5-9.8L0 1.2h7.6l5.2 6.9 6.1-6.9zm-1.3 19.4h2L6.5 3.3H4.3l13.3 17.3z"/></svg>
+                    </a>
+                </div>
+            </div>
 
-                        },
-                        viewPort: {
-                            enable: true,
-                            outof: "pause",
-                            visible_area: "80%"
-                        },
+            <!-- FORM: point action= to your Formspree/Jotform endpoint (see notes) -->
+            <form class="form-card" action="https://formspree.io/f/mqpkdnzp" method="POST">
+                <div class="fld">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="fld">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <div class="fld">
+                    <label for="phone">Phone <span style="font-weight:400;color:var(--tx-soft)">(optional)</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 …">
+                </div>
+                <div class="fld">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me a little about it…" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+        </div>
+    </section>
 
-                        responsiveLevels: [1240, 1024, 778, 480],
-                        gridwidth: [1240, 1024, 778, 480],
-                        gridheight: [870, 730, 600, 420],
-                        lazyType: "smart",
-                        parallax: {
-                            type: "mouse",
-                            origo: "slidercenter",
-                            speed: 2000,
-                            levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
-                        },
-                        shadow: 0,
-                        spinner: "off",
-                        stopLoop: "off",
-                        stopAfterLoops: -1,
-                        stopAtSlide: -1,
-                        shuffle: "off",
-                        autoHeight: "off",
-                        hideThumbsOnMobile: "off",
-                        hideSliderAtLimit: 0,
-                        hideCaptionAtLimit: 0,
-                        hideAllCaptionAtLilmit: 0,
-                        disableProgressBar: "on",
-                        debugMode: false,
-                        fallbacks: {
-                            simplifyAll: "off",
-                            nextSlideOnWindowFocus: "off",
-                            disableFocusListener: false,
-                        }
-                    });
-                }
-            }); /*ready*/
-        </script>
-        <script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
-        <script type="text/javascript" src="js/cubeportfolio/masonry-projects.js"></script>
-        <script type="text/javascript" src="js/animations/js/animations.min.js"></script>
-        <script type="text/javascript" src="js/animations/js/appear.min.js"></script>
-        <script type="text/javascript" src="js/cubeportfolio/main.js"></script>
-        <script type="text/javascript" src='https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js'></script>
-        <script>
-            $(window).load(function () {
-                setTimeout(function () {
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="foot-grid">
+                <div class="foot-brand">
+                    <img src="images/logo-dark-b.svg" alt="Biswadip Bhattacharjee">
+                    <p>DevOps &amp; Platform Engineer - automating everything, one pipeline at a time. Let's build something reliable together.</p>
+                    <blockquote class="foot-quote">
+                        I love meeting new people and swapping stories over a coffee or a beer about
+                        technology, career, life stories, the struggles, and the journeys that shape our
+                        life 😊.<br>
+                        Let's do something great together, just say <a href="#contact">Hi!</a> 👋
+                    </blockquote>
+                </div>
+                <div class="foot-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="foot-col">
+                    <h4>Focus areas</h4>
+                    <ul>
+                        <li>CI/CD &amp; GitOps</li>
+                        <li>Kubernetes &amp; Helm</li>
+                        <li>Terraform &amp; Ansible</li>
+                        <li>AWS Cloud</li>
+                        <li>Observability</li>
+                        <li>DevOps AI agent</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-bottom">
+                <span>© <span id="year"></span> Biswadip Bhattacharjee. All rights reserved.</span>
+                <span>Built &amp; deployed with a GitOps workflow.</span>
+            </div>
+        </div>
+    </footer>
 
-                    $('.loader-live').fadeOut();
-                }, 1000);
-            })
-        </script>
-        <script src="js/functions/functions.js"></script>
-    </body>
+    <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+    <!-- ================= SCRIPT ================= -->
+    <script>
+        (function () {
+            var header = document.getElementById('top');
+            var burger = document.getElementById('hamburger');
+            var menu = document.getElementById('mobileMenu');
+            var toTop = document.getElementById('toTop');
+
+            /* mobile menu toggle */
+            burger.addEventListener('click', function () {
+                var open = menu.classList.toggle('open');
+                burger.classList.toggle('open', open);
+                burger.setAttribute('aria-expanded', open);
+            });
+            /* close menu when a link is tapped */
+            menu.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    menu.classList.remove('open');
+                    burger.classList.remove('open');
+                    burger.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            /* header shadow + back-to-top on scroll */
+            window.addEventListener('scroll', function () {
+                var y = window.scrollY;
+                header.classList.toggle('scrolled', y > 8);
+                toTop.classList.toggle('show', y > 500);
+            });
+
+            /* active nav link based on section in view */
+            var sections = document.querySelectorAll('section[id]');
+            var navLinks = document.querySelectorAll('.nav-links a');
+            var spy = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) {
+                        var id = e.target.getAttribute('id');
+                        navLinks.forEach(function (l) {
+                            l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+                        });
+                    }
+                });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            sections.forEach(function (s) { spy.observe(s); });
+
+            /* skills filter */
+            var bar = document.getElementById('filterBar');
+            var skills = document.querySelectorAll('#skillGrid .skill');
+            bar.addEventListener('click', function (e) {
+                var btn = e.target.closest('.chip');
+                if (!btn) return;
+                bar.querySelector('.active').classList.remove('active');
+                btn.classList.add('active');
+                var f = btn.getAttribute('data-filter');
+                skills.forEach(function (s) {
+                    s.classList.toggle('hide', !(f === 'all' || s.getAttribute('data-cat') === f));
+                });
+            });
+
+            /* scroll reveal */
+            var reveals = document.querySelectorAll('.reveal');
+            var ro = new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                    if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+                });
+            }, { threshold: .15 });
+            reveals.forEach(function (r) { ro.observe(r); });
+
+            /* year */
+            document.getElementById('year').textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
 
 </html>
